@@ -11,7 +11,6 @@
   position: relative;
   background-color: #BA283B;
   background-size: cover;
-  min-height 0px;
 }
 
 .background-overlay {
@@ -27,6 +26,30 @@
 
 .team{
   background-color: #229B7F;
+}
+
+#button-up{
+  width: 60px;
+  height: 60px;
+  background-color: #BA283B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition: all 200ms ease;
+  transform: scale(0);
+}
+
+#button-up:hover{
+  transform: scale(1.1);
+  border-color: rgba(0,0,0,0.1);
 }
 
 footer {
@@ -62,17 +85,5 @@ footer {
 
 .navbar{
   background-color:#229B7F;
-}
-
-.ir_arriba{
-  display:inline-block;
-  padding:20px;
-  background:#BF1736;
-  color:#F5F5F5;
-  border-radius:10px;
-  cursor:pointer;
-  position:fixed;
-  bottom:20px;
-  right:20px;
 }
 

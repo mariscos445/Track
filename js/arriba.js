@@ -1,13 +1,25 @@
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 50) {
-        $('a.scroll-top').fadeIn('slow');
+document.getElementById("button-up").addEventListener("click", scrollUp);
 
-    } else {
-        $('a.scroll-top').fadeOut('slow');
+function scrollUp(){
+
+    var currentScroll = document.documentElement.scrollTop;
+
+    if (currentScroll > 0){
+        window.requestAnimationFrame(scrollUp);
+        window.scrollTo (0, currentScroll - (currentScroll / 3));
     }
-});
+}
 
-$('a.scroll-top').click(function(event) {
-    event.preventDefault();
-    $('html, body').animate({scrollTop: 0}, 600);
-});
+buttonUp = document.getElementById("button-up");
+
+window.onscroll = function(){
+
+    var scroll = document.documentElement.scrollTop;
+
+    if (scroll > 500){
+        buttonUp.style.transform = "scale(1)";
+    }else if(scroll < 500){
+        buttonUp.style.transform = "scale(0)";
+    }
+
+}
