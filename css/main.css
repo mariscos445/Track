@@ -1,0 +1,78 @@
+.navbar {
+  box-shadow: 2px 2px 5px #000;
+  opacity: 0.9;
+}
+
+.navbar .nav-item .nav-link {
+  color: #fff;
+}
+
+.main-header {
+  position: relative;
+  background-color: #BA283B;
+  background-size: cover;
+  min-height 0px;
+}
+
+.background-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.form-control, .btn{
+  border-radius: 0;
+}
+
+.team{
+  background-color: #229B7F;
+}
+
+footer {
+  background: #30336b;
+}
+
+.grids{
+  background-color: #0E2773;
+}
+
+.grids2{
+  background-color: #1438A6;
+}
+
+.grids3{
+  background-color: #1455D9;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: #274B69;
+}
+
+::-webkit-scrollbar-track{
+  border: 7px solid #1D3431;
+  box-shadow: inset 0 0 2.5px rgba(0,0,0,0.5) ;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color:  #33BDA3;
+  border-radius: 5px;
+}
+
+.navbar{
+  background-color:#229B7F;
+}
+
+.ir_arriba{
+  display:inline-block;
+  padding:20px;
+  background:#BF1736;
+  color:#F5F5F5;
+  border-radius:10px;
+  cursor:pointer;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+}
+

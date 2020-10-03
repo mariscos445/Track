@@ -1,0 +1,30 @@
+.navbar {
+        box-shadow: 2px 2px 5px #000;
+        opacity: 0.9;
+      }
+      
+      .navbar .nav-item .nav-link {
+        color: #fff;
+      }
+      
+      .main-header {
+        position: relative;
+        background-image: linear-gradient(25deg, #00174d, #491849, #751344, #a0003e);
+        background-size: cover;
+        min-height 700px;
+      }
+      
+      .background-overlay {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .form-control, .btn{
+        border-radius: 0;
+      }
+      
+      .team, footer {
+        background: #30336b;
+      }
